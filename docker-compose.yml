@@ -4,7 +4,5 @@ services:
   nginx:
     build:  ./my-docker/nginx
     ports:
-#      - '80:80'
+      - '80:80'
       - '443:443'
-    volumes:
-      - ./my-docker/nginx/ssl/ssl.conf:/etc/nginx/conf.d/ssl.conf
